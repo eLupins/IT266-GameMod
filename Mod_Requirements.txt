@@ -1,0 +1,25 @@
+Mod goals for Q4:
+
+-Melee weapon replacements
+	-you've got the gauntlet, lets work with that
+	-change range, damage, recharge rate
+	-rocket launcher as a slingshot? Use particle system for this one
+-XP based weapon upgrades
+	-prof. says theres an ingame "store" already
+	-mod the store to a skill tree
+	-exp earned is the currency that is used to upgrade skill tree
+-3rd Person
+	-nuff said
+-Fantasy rpg; give 5 magic spells
+	-defense spell
+		-null all enemy attack damage for 10 seconds
+	-attack spell
+		-long range attack spell
+	-speed spell
+		-increase speed for 10 seconds
+	-freeze spell
+		-freeze effected enemy for 10 seconds
+	-explosion spell(?)
+		-still a maybe
+		-make any enemies within a 15 units of the center of the spell take damage
+		-particle system for this; look for an explosion particle system in the .def files
