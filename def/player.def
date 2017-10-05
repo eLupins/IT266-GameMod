@@ -641,7 +641,7 @@ entityDef player_marine
 	"weapon0_toggle"					"0"			// whether selecting weapon twice switches between current and previous weapons
 	"weapon0_flashlight"					"1"
 
-	"def_weapon1"						"weapon_machinegun"
+	"def_weapon1"						"weapon_gauntlet" //CHANGE
 	"weapon1_best"						"1"
 	"weapon1_cycle"						"1"
 	"weapon1_flashlight"					"1"
@@ -707,19 +707,20 @@ entityDef player_marine
 	"pm_maxviewpitch"					"89"	// looking down
 	"pm_stamina"						"12"
 	"pm_staminathreshold"					"4"
-	"pm_thirdPerson"					"1" //CHANGE ; THIS MADE THE GAME INTO THIRD PERSON BUT NOW THERES NO HEALTH OR SHIELD BAR
+	"pm_thirdPerson"					"1" //CHANGE ; THIS MADE THE GAME INTO THIRD PERSON BUT NOW THERES NO HEALTH OR SHIELD BAR ; ADDED ONTO PLAYER.DEF
+	"pm_thirdPersonHeight"				"20" //CHANGE ; ADDED ONTO THE PLAYER.DEF
 	"pm_staminarate"					"0.75"
 	"pm_crouchheight"					"38"
 	"pm_crouchviewheight"					"32"
 	"pm_normalheight"					"74"
 	"pm_normalviewheight"					"68"
-	"pm_deadheight"						"20"
+	"pm_deadheight"						"30"
 	"pm_deadviewheight"					"10"
 	"pm_crouchrate"						"0.87"
 	"pm_bboxwidth"						"32"
 	"pm_modelview"						"0"			// 0 == normal, 1 == view inside model, 2 == view inside model when dead
 	"pain_delay"						"0.5"		// how long to wait before playing pain sound
-	"respawn_delay"						"1.7"		// minimum delay for respawning after death
+	"respawn_delay"						"1.0"		// minimum delay for respawning after death ; CHANGE
 
 	// stats
 	"health"						"300" //CHANGE
@@ -1075,8 +1076,8 @@ entityDef player_marine_mp
 	"weapon10_best"			"1"
 
 	// stats
-	"health"			"100"
-	"armor"				"50"
+	"health"			"400" //CHANGE
+	"armor"				"300" //CHANGE
 
 	"ammo_none"			"-1"
 	"ammo_railgun"			"-1"

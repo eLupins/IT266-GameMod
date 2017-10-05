@@ -56,7 +56,7 @@ entityDef viewStyle_q3_blaster {
 entityDef weapon_blaster
 {
 	"editor_menu"				"pickup"
-	"editor_color"				".3 .3 1"
+	"editor_color"				".3 .7 1" //CHANGE
 	"editor_mins"				"-16 -16 0"
 	"editor_maxs"				"16 16 32"
 
@@ -65,7 +65,7 @@ entityDef weapon_blaster
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponBlaster"
 	"weaponname"				"Blaster"
-	"size"						"32 32 32"
+	"size"						"32 32 32" 
 
   	"model_view"				"weapon_blaster_view"
   	"model_view_strogg"			"weapon_blaster_view_strogg"
@@ -78,11 +78,11 @@ entityDef weapon_blaster
 	"joint_world_flash"			"muzzle_flash"
 
 	// Firing properties
-	"chargeTime"				".8"
+	"chargeTime"				".10" //CHANGED FROM .8
 	"chargeDelay"				".1"
 	"chargeGlow"				"0 .4"
 	"fireRate"					".15"
-	"spread"					".2"
+	"spread"					"1"
 
 //	"def_projectile"			"projectile_blaster"
 	"def_hitscan"				"hitscan_blaster"
@@ -114,10 +114,10 @@ entityDef weapon_blaster
 	"recoilTime"				"100"
 	"recoilAngles"				"-2 0 0"
 	
-	// ---------------------------- Flashlight ---------------------------------------
+	// ---------------------------- Flashlight --------------------------------------- //COLOUR
 	
 	"mtr_flashlightShader"		"gfx/lights/flashlight"
-	"flashlightColor"			"1 1 .9"
+	"flashlightColor"			"1 1 .9" //CHANGE
 	"flashlightRadius"			"400"
 	"flashlightAngle"			"15.0"
 	"flashlightTarget"			"1000 0 0"
@@ -129,7 +129,7 @@ entityDef weapon_blaster
 	// ---------------------------- Muzzle Flash ---------------------------------------
 
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"0.7 0.8 1"
+	"flashColor"				"1 0.8 1" //CHANGE
 	"flashRadius"				"200"
 	"flashPointLight"			"1"
 	"flashTime"					".1"
@@ -259,7 +259,7 @@ entityDef projectile_blaster
 																
 	"def_damage"				"damage_blaster"
 								
-	"velocity"					"1500 0 0"
+	"velocity"					"1800 0 0" //CHANGE
 	"fuse"						"4"
 	"push"						"7500"
 								
@@ -292,7 +292,7 @@ entityDef projectile_blaster_charged
 	"mins"						"-8 -8 -8"
 	"maxs"						"8 8 8"
 
-	"velocity"					"10 0 0" //THE CANCER SPEED STARTS HERE
+	"velocity"					"309 0 0" //THE CANCER SPEED STARTS HERE; CHANGE
 
 	"fx_fly"					"effects/weapons/blaster/charged/fly.fx"
 	"fx_impact"					"effects/weapons/blaster/charged/impact_default.fx"
@@ -310,7 +310,7 @@ entityDef projectile_blaster_charged
 // Damage
 //-------------------------------------------------------------------------------------------------------------------0
 
-entityDef damage_blaster
+entityDef damage_blaster //BLASTER DAMAGE DEFINITIONS HERE
 {
 	"inherit"					"damage_bullet"
 	"damage"					"400" //CHANGE HERE
@@ -333,7 +333,7 @@ entityDef damage_blastersplash_charged
 	"inherit"					"damage_blaster"
 	
 	"damage"					"400"
-	"radius"					"500"
+	"radius"					"100" //CHANGE
 	"knockback"					"600"
 	"push"						"2500"
 }
