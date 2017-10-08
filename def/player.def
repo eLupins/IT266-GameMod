@@ -635,13 +635,13 @@ entityDef player_marine
 	"copy_joint legs_channel"				"legs_channel"
 
 	// weapon slots WEAPON ;; weapon slot 
-	"def_weapon0"						"weapon_gauntlet"
+	"def_weapon0"						"weapon_gauntlet" //CHANGE
 	"weapon0_best"						"1"			// whether weapon should be chosen when out of ammo
 	"weapon0_cycle"						"1"			// whether weapon should be selected when using next/prev weapon
 	"weapon0_toggle"					"0"			// whether selecting weapon twice switches between current and previous weapons
 	"weapon0_flashlight"					"1"
 
-	"def_weapon1"						"weapon_gauntlet" //CHANGE
+	"def_weapon1"						"weapon_blaster" //CHANGE
 	"weapon1_best"						"1"
 	"weapon1_cycle"						"1"
 	"weapon1_flashlight"					"1"
@@ -692,7 +692,7 @@ entityDef player_marine
 	// default weapons
 	// seperate multiple weapons with commas (no spaces).
 	// NOTE: default ammo must be specified explicitly.
-	"weapon"						"weapon_blaster"
+	"weapon"						"weapon_blaster,weapon_gauntlet,weapon_shotgun,weapon_hyperblaster" //CHANGE
 	"current_weapon"					"0"
 
 	"pm_jumpheight"						"50" //CHANGE
