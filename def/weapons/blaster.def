@@ -78,11 +78,11 @@ entityDef weapon_blaster
 	"joint_world_flash"			"muzzle_flash"
 
 	// Firing properties
-	"chargeTime"				".10" //CHANGED FROM .8
+	"chargeTime"				".15" //CHANGED FROM .8
 	"chargeDelay"				".1"
-	"chargeGlow"				"0 .4"
+	"chargeGlow"				"1 .4"
 	"fireRate"					".15"
-	"spread"					"1"
+	"spread"					"2" //CHANGE
 
 //	"def_projectile"			"projectile_blaster"
 	"def_hitscan"				"hitscan_blaster"
@@ -292,7 +292,7 @@ entityDef projectile_blaster_charged
 	"mins"						"-8 -8 -8"
 	"maxs"						"8 8 8"
 
-	"velocity"					"309 0 0" //THE CANCER SPEED STARTS HERE; CHANGE
+	"velocity"					"350 0 0" //THE CANCER SPEED STARTS HERE; CHANGE
 
 	"fx_fly"					"effects/weapons/blaster/charged/fly.fx"
 	"fx_impact"					"effects/weapons/blaster/charged/impact_default.fx"
@@ -325,15 +325,15 @@ entityDef damage_blaster //BLASTER DAMAGE DEFINITIONS HERE
 entityDef damage_blaster_charged
 {
 	"inherit"					"damage_blaster"
-	"damage"					"200
+	"damage"					"200" //CHANGE
 }
 
 entityDef damage_blastersplash_charged
 {
 	"inherit"					"damage_blaster"
 	
-	"damage"					"400"
-	"radius"					"100" //CHANGE
+	"damage"					"400" //CHANGE
+	"radius"					"500" //CHANGE
 	"knockback"					"600"
 	"push"						"2500"
 }

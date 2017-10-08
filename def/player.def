@@ -708,7 +708,7 @@ entityDef player_marine
 	"pm_stamina"						"12"
 	"pm_staminathreshold"					"4"
 	"pm_thirdPerson"					"1" //CHANGE ; THIS MADE THE GAME INTO THIRD PERSON BUT NOW THERES NO HEALTH OR SHIELD BAR ; ADDED ONTO PLAYER.DEF
-	"pm_thirdPersonHeight"				"6" //CHANGE ; ADDED ONTO THE PLAYER.DEF
+	"pm_thirdPersonHeight"				"10" //CHANGE ; ADDED ONTO THE PLAYER.DEF
 	"pm_staminarate"					"0.75"
 	"pm_crouchheight"					"38"
 	"pm_crouchviewheight"					"32"
