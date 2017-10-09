@@ -308,7 +308,7 @@ entityDef projectile_blaster_charged
 
 //--------------------------------------------------------------------------------------------------------------------
 // Damage
-//-------------------------------------------------------------------------------------------------------------------0
+//-------------------------------------------------------------------------------------------------------------------
 
 entityDef damage_blaster //BLASTER DAMAGE DEFINITIONS HERE
 {
@@ -333,7 +333,7 @@ entityDef damage_blastersplash_charged
 	"inherit"					"damage_blaster"
 	
 	"damage"					"400" //CHANGE
-	"radius"					"500" //CHANGE
+	"radius"					"200" //CHANGE
 	"knockback"					"600"
 	"push"						"2500"
 }

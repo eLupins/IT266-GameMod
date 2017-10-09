@@ -52,7 +52,7 @@ entityDef viewStyle_q3_hyperblaster {
 entityDef weapon_hyperblaster
 {
 	"editor_menu"				"pickup"
-	"editor_color"				".3 .3 1"
+	"editor_color"				"1 .7 1" //CHANGE
 	"editor_mins"				"-16 -16 0"
 	"editor_maxs"				"16 16 32"
 
@@ -91,7 +91,7 @@ entityDef weapon_hyperblaster
 	"ammoType"					"ammo_hyperblaster"
 	"inv_start_ammo_hyperblaster"		"60"
 	"ammoRegenStep"				"5"
-	"ammoRegenTime"				"1500"
+	"ammoRegenTime"				"1100" //CHANGE FROM 1500
 	"clipSize"					"60"									// large for smooth regen
 	"ammoRequired"				"1"										// ammo is handled in the script file
 	"gui"						"guis/weapons/hyperblaster_ammo.gui"
@@ -106,10 +106,10 @@ entityDef weapon_hyperblaster
 	"recoilAngles"				"1 0 0"
 	
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"0.7 0.8 1"
-	"flashRadius"				"200"
+	"flashColor"				"0.7 1 1" //CHANGE
+	"flashRadius"				"400" //CHANGE
 	"flashPointLight"			"1"
-	"flashTime"					".1"
+	"flashTime"					".3" //CHANGE
 	"flashViewOffset"			"15 -2 5"
 
 	"mtr_guiLightShader"		"lights/viewWeaponGuiLight"
@@ -271,7 +271,7 @@ entityDef weaponmod_hyperblaster_bounce2
 entityDef damage_hyperblaster
 {
 	"inherit"					"damage_blaster"
-	"damage"					"14"
+	"damage"					"0" //CHANGE
 
 	"deathPush"					"100"
 	"deathPushMin"				"3000 350"
@@ -281,15 +281,15 @@ entityDef damage_hyperblaster
 entityDef damage_hyperblaster_mp
 {
 	"inherit"				"damage_hyperblaster"
-	"knockback"				"14"
+	"knockback"				"40" //CHANGE
 }
 
 entityDef damage_hyperblaster_splash
 {
-	"damage"					"10"
-	"radius"					"35"
-	"knockback"					"5"
-	"push"						"0"
+	"damage"					"0" //CHANGE
+	"radius"					"40" //CHANGE
+	"knockback"					"50" //CHANGE
+	"push"						"50" //CHANGE
 	"gib"						"0"
 
 	"deathPush"					"100"
@@ -297,10 +297,10 @@ entityDef damage_hyperblaster_splash
 	"deathPushMax"				"4000 500"
 }
 
-entityDef damage_hyperblaster_splash_mp
-{
+entityDef damage_hyperblaster_splash_mp //THERES STILL DAMAGE BEING DEALT; TRY TO FIND A WAY TO NULL IT AND MAKE IT A FORCE PUSH GUN
+{ 
 	"inherit"				"damage_hyperblaster_splash"
-	"knockback" 				"10"
+	"knockback" 				"40"
 }
 
 entityDef projectile_hyperblaster
