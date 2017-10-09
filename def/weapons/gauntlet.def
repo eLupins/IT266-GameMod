@@ -112,7 +112,7 @@ entityDef weapon_gauntlet
 	// ---------------------------- Muzzle Flash ---------------------------------------
 
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"0.7 0.8 1"
+	"flashColor"				"1 0.8 1" //CHANGE
 	"flashRadius"				"200"
 	"flashPointLight"			"1"
 	"flashTime"					".1"
@@ -140,7 +140,7 @@ entityDef weapon_gauntlet
 	"fx_impact"					"effects/weapons/gauntlet/impact.fx"
 	"fx_impact_flesh"			"effects/weapons/gauntlet/impact_flesh.fx"
 	"fx_impact_monstermetal"	"effects/weapons/gauntlet/impact_monstermetal.fx"
-	"range"						"48"
+	"range"						"60" //CHANGED FROM 48
 	"fireRate"					".4"
 
 	"has_windup"				"1"
@@ -156,7 +156,7 @@ entityDef weapon_gauntlet_mp
 	"muzzle_kick_offset"		"0 0 0"
 	"recoilTime"			"0"
 	"recoilAngles"			"0 0 0"
-	"range"						"50"
+	"range"						"50" ///CHANGE
 }
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -204,7 +204,7 @@ entityDef damage_gauntlet
 	"deathPush"					"200"
 	"deathPushMin"				"2000 400"
 	"deathPushMax"				"4000 500"
-	"knockback"					"50"
+	"knockback"					"80" // CHANGE FROM 50
 	
 	"bleed"						"1"
 }
