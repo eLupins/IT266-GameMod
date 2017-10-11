@@ -155,7 +155,7 @@ entityDef weapon_shotgun_mp
 	"hidesurface"				"models/weapons/shotgun/clip"
 	// q3 style spread
 	"shotgunSpreadStyle"			"1"
-	"spread"				"875"
+	"spread"				"100" //CHANGED FROM 875
 	"hitscans"				"11"
 	"editor_ignore"				"1"
 	"range"					"131072"
@@ -336,9 +336,10 @@ entityDef hitscan_shotgun_pellet
 entityDef damage_pellet
 {
 	"inherit"					"damage_bullet"
-	"damage"					"14"
+	"damage"					"0" //CHANGE
+	
 
-	"splat_size"				"128"
+	"splat_size"				"200" //CHANGE
 	
 	"deathPush"					"100"
 	"deathPushMin"				"4000 500"
@@ -348,9 +349,12 @@ entityDef damage_pellet
 entityDef damage_pellet_mp
 {
 	"inherit"					"damage_pellet"
-	"knockback"					"10"
-	"damage"					"10"
+	"radius"					"300" //CHANGED ; ADDED TO THE CODE
+	"push"						"2500" //CHANGE ; ADDED TO THE CODE 
+	"knockback"					"400" //CHANGE ; USED TO BE 10
+	"damage"					"0" //CHANGE
 }
+
 
 //--------------------------------------------------------------------------------------------------------------------
 //												Casing

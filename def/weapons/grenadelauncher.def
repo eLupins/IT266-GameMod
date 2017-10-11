@@ -253,7 +253,7 @@ entityDef projectile_grenade
 	"contact_friction"			"10"
 	"bounce"					".65"
 	"gravity"					"1"
-	"fuse"						"2.5"
+	"fuse"						".9" //CHANGE FROM 2.5
 								
 	"detonate_on_fuse"			"1"
 	"detonate_on_death"			"0"
@@ -311,13 +311,13 @@ entityDef damage_grenadeDirect
 entityDef damage_grenadeDirect_mp
 {
 	"inherit"					"damage_grenadeDirect"
-	"damage"					"100"
+	"damage"					"0" //CHANGE
 	"knockback"					"100"
 }
 
 entityDef damage_grenadeSplash 
 {
-	"damage"					"200"
+	"damage"					"0" //CHANGE
 	"radius"					"250"
 	"knockback"					"100"
 	"push"						"10000"
@@ -335,6 +335,6 @@ entityDef damage_grenadeSplash
 entityDef damage_grenadeSplash_mp
 {
 	"inherit"					"damage_grenadeSplash"
-	"damage"					"100"
+	"damage"					"0" //CHANGE
 	"radius"					"150"
 }

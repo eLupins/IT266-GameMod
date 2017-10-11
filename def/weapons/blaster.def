@@ -78,10 +78,10 @@ entityDef weapon_blaster
 	"joint_world_flash"			"muzzle_flash"
 
 	// Firing properties
-	"chargeTime"				".15" //CHANGED FROM .8
+	"chargeTime"				"2" //CHANGED FROM .8 ; IF THE DAMAGE AND RADIUS IS HIGH, MAKE A HIGHER CHARGE TIME
 	"chargeDelay"				".1"
-	"chargeGlow"				"1 .4"
-	"fireRate"					".15"
+	"chargeGlow"				"1 .8" //CHANGED FROM .4
+	"fireRate"					".19" //CHANGED FROM .15
 	"spread"					"2" //CHANGE
 
 //	"def_projectile"			"projectile_blaster"
@@ -130,9 +130,9 @@ entityDef weapon_blaster
 
 	"mtr_flashShader"			"lights/muzzleflash"
 	"flashColor"				"1 0.8 1" //CHANGE
-	"flashRadius"				"200"
+	"flashRadius"				"900" //CHANGE
 	"flashPointLight"			"1"
-	"flashTime"					".1"
+	"flashTime"					".9" //CHANGE FROM .1 ; this is actually the trail that follows when you shoot normally
 	"flashViewOffset"			"15 5 -10"
 
 	// ------------------------- Sounds and Effects ---------------------------------------
