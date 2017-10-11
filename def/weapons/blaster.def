@@ -67,10 +67,13 @@ entityDef weapon_blaster
 	"weaponname"				"Blaster"
 	"size"						"32 32 32" 
 
+	/* CHANGED ; THIS SECTION OF CODE IS WHAT LOADS THE PHYSICAL MODEL OF THE GUN; REMOVING THIS MADE THE FIRE AUDIO LOWER, BUT THE WEAPON STILL FIRES
   	"model_view"				"weapon_blaster_view"
   	"model_view_strogg"			"weapon_blaster_view_strogg"
   	"model_world"				"weapon_blaster_world"
 	"model" 					"models/weapons/blaster/w_bp.lwo"
+	*/
+
 
 	"joint_attach"				"PST_ATTACHER"
 	"joint_view_flashlight"		"barrel"
