@@ -316,11 +316,11 @@ entityDef projectile_blaster_charged
 entityDef damage_blaster //BLASTER DAMAGE DEFINITIONS HERE
 {
 	"inherit"					"damage_bullet"
-	"damage"					"400" //CHANGE HERE
+	"damage"					"10" //CHANGE 
 
 	"fx_wound"					"effects/wounds/energy.fx"
 
-	"deathPush"					"100"
+	"deathPush"					"900" //CHANGED
 	"deathPushMin"				"2000 250"
 	"deathPushMax"				"5000 500"
 }
@@ -337,6 +337,6 @@ entityDef damage_blastersplash_charged
 	
 	"damage"					"400" //CHANGE
 	"radius"					"200" //CHANGE
-	"knockback"					"600"
+	"knockback"					"60000"
 	"push"						"2500"
 }

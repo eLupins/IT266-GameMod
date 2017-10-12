@@ -63,15 +63,23 @@ entityDef weapon_shotgun
 	"editor_menu"				"pickup"
 	"editor_var inv_weaponmod"		"comma separated of any of the following shotgun modifications.\n - weapon_shotgun_ammo"
 
+
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponShotgun"
 	"size"					"32 32 32"
+
+	/*
+	
+	//////////////////THIS SECTION OF CODE MAKES THE MODEL APPEAR IN GAME
 	"model_view" 				"weapon_shotgun_view"
 	"model_view_strogg" 			"weapon_shotgun_view_strogg"
   	"model_world"				"weapon_shotgun_world"
 	"model"					"models/weapons/shotgun/w_sg.lwo"
+	*/ 
+
 	"def_dropItem"				"weapon_shotgun"
 	"def_ejectBrass"			"debris_brass_shotgun"
+	
 
 	"joint_attach"				"SG_ATTACHER"
 	"joint_view_flash"			"flash"
@@ -79,9 +87,9 @@ entityDef weapon_shotgun
 	"joint_view_guiLight"			"body"
 	"joint_world_flash"			"muzzle_flash"
 
-	"fireRate"				".8"
-	"spread"				"7"
-	"hitscans"				"10"
+	"fireRate"				"1" 
+	"spread"				"3" //CHANGED FROM 8
+	"hitscans"				"5" //CHANGED FROM 10
 
 	"inv_weapon"				"weapon_shotgun"
 	"inv_start_ammo_shotgun"		"10"
@@ -116,10 +124,10 @@ entityDef weapon_shotgun
 	"foreshorten"				".44"
 
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"1 0.8 0.4"
+	"flashColor"				"1 0.8 0.9"//CHANGE
 	"flashRadius"				"240"
 	"flashPointLight"			"1"
-	"flashTime"				".1"
+	"flashTime"				".8" //CHANGE FROM .1
 	"flashViewOffset"			"15 -5 -5"
 
 	"fx_eject"				"effects/weapons/shotgun/eject.fx"
@@ -143,7 +151,7 @@ entityDef weapon_shotgun
 	"mtr_guiLightShader"			"lights/viewWeaponGuiLight"
 	"glightRadius"				".9"
 	"glightOffset"				"0 1.5 -5.0"
-	"glightColor"				"1 0 0 1"
+	"glightColor"				"1 0 1 1"//CHANGE FROM 1 0 0 1
 
 	"net_syncPhysics"			"1"
 }
@@ -280,7 +288,7 @@ entityDef wpmod_shotgun_ammo
 {
 	"weapon"				"weapon_shotgun"
 	"mod_showsurface"		"models/weapons/shotgun/clip"
-	"clipSize"				"10"
+	"clipSize"				"14"
 }
 
 entityDef weaponmod_shotgun_ammo
@@ -326,7 +334,7 @@ entityDef hitscan_shotgun_pellet
 	"def_damage_flesh"			"damage_pellet"
 	// for multiplayer clients. we only sync the hitscan def
 	// must be the same as weapon_shotgun_mp
-	"hitscans"				"11"
+	"hitscans"				"3" //SCALED DOWN FROM 11
 }
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -336,14 +344,20 @@ entityDef hitscan_shotgun_pellet
 entityDef damage_pellet
 {
 	"inherit"					"damage_bullet"
-	"damage"					"0" //CHANGE
+	"damage"					"3" //CHANGE
 	
-
 	"splat_size"				"200" //CHANGE
-	
+	"push"						"2500"
+	"knockback"					"2000"
 	"deathPush"					"100"
 	"deathPushMin"				"4000 500"
 	"deathPushMax"				"9000 600"
+	
+
+
+	}
+
+
 }
 
 entityDef damage_pellet_mp
@@ -351,8 +365,10 @@ entityDef damage_pellet_mp
 	"inherit"					"damage_pellet"
 	"radius"					"300" //CHANGED ; ADDED TO THE CODE
 	"push"						"2500" //CHANGE ; ADDED TO THE CODE 
-	"knockback"					"400" //CHANGE ; USED TO BE 10
-	"damage"					"0" //CHANGE
+	"knockback"					"200000" //CHANGE ; USED TO BE 10
+	"damage"					"15" //CHANGE
+
+	//knockback and damage are intertwined; one cannot work without the other
 }
 
 

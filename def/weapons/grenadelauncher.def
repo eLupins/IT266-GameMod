@@ -62,10 +62,13 @@ entityDef weapon_grenadelauncher
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponGrenadeLauncher"
 	"size"						"32 32 32"
+	/*
+	//////////////////This  makes the model visible in game/////////////////////////
   	"model_view"				"weapon_grenadelauncher_view"
   	"model_view_strogg"			"weapon_grenadelauncher_view_strogg"
   	"model_world"				"weapon_grenadelauncher_world"
 	"model"						"models/weapons/grenadelauncher/w_gl.lwo"
+	*/
 	"def_dropItem"				"weapon_grenadelauncher"
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_grenadelauncher"
 
@@ -74,7 +77,7 @@ entityDef weapon_grenadelauncher
 	"joint_view_barrel"			"barrel"
 	"joint_world_flash"			"muzzle_flash"
 
-	"fireRate"					".8"
+	"fireRate"					"1" //CHANGED FROM .8
 	"spread"					"0"
 	
 	// the direction of projectile launches will be modified by this
@@ -105,10 +108,10 @@ entityDef weapon_grenadelauncher
 	"recoilAngles"				"-.20 0 0"
 	
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"0.99 0.84 .31"
+	"flashColor"				"0.99 0.84 1" //CHANGE
 	"flashRadius"				"200"
 	"flashPointLight"			"1"
-	"flashTime"					".1"
+	"flashTime"					"1.4" //CHANGED FROM .1
 	"flashViewOffset"			"15 -5 -5"
 
 	"mtr_guiLightShader"		"lights/viewWeaponGuiLight"
@@ -246,7 +249,7 @@ entityDef projectile_grenade
 																											
 	"speed"						"700"
 	"angular_velocity"			"-10 5 1"
-	"settle_duration"			"0.08"
+	"settle_duration"			"1.08" //CHANGED FROM 0.08
 	
 	"linear_friction"			"0"
 	"angular_friction"			"0"
@@ -296,7 +299,7 @@ entityDef projectile_grenade
 
 entityDef damage_grenadeDirect 
 {
-	"damage"					"125"
+	"damage"					"20"
 	"gib"						"1"
 
 	"deathPush"					"200"
@@ -312,18 +315,18 @@ entityDef damage_grenadeDirect_mp
 {
 	"inherit"					"damage_grenadeDirect"
 	"damage"					"0" //CHANGE
-	"knockback"					"100"
+	"knockback"					"60000" //CHANGE
 }
 
 entityDef damage_grenadeSplash 
 {
 	"damage"					"0" //CHANGE
-	"radius"					"250"
-	"knockback"					"100"
-	"push"						"10000"
+	"radius"					"550"
+	"knockback"					"80000"
+	"push"						"80000"
 	"gib"						"0"
 
-	"deathPush"					"100"
+	"deathPush"					"50000"
 	"deathPushMin"				"7000 9000"
 	"deathPushMax"				"10000 12000"
 
@@ -336,5 +339,5 @@ entityDef damage_grenadeSplash_mp
 {
 	"inherit"					"damage_grenadeSplash"
 	"damage"					"0" //CHANGE
-	"radius"					"150"
+	"radius"					"550" //CHANGED FROM 250
 }

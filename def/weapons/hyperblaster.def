@@ -61,10 +61,13 @@ entityDef weapon_hyperblaster
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponHyperblaster"
 	"size"						"32 32 32"
+	/*
+	////////////////////THIS MAKES THE MODEL NOT VISiBLE IN GAME
   	"model_view"				"weapon_hyperblaster_view"
   	"model_view_strogg"			"weapon_hyperblaster_view_strogg"
   	"model_world"				"weapon_hyperblaster_world"
 	"model"						"models/weapons/hyperblaster/w_hb.lwo"
+	*/
 	"def_dropItem"				"weapon_hyperblaster"
 	"def_projectile"			"projectile_hyperblaster"
 
@@ -109,11 +112,11 @@ entityDef weapon_hyperblaster
 	"flashColor"				"0.7 1 1" //CHANGE
 	"flashRadius"				"400" //CHANGE
 	"flashPointLight"			"1"
-	"flashTime"					".3" //CHANGE
+	"flashTime"					"1" //CHANGE
 	"flashViewOffset"			"15 -2 5"
 
 	"mtr_guiLightShader"		"lights/viewWeaponGuiLight"
-	"glightRadius"				"1.3"
+	"glightRadius"				"2.3" //CHANGE FROM 1.3
 	"glightOffset"				"0 2 0"
 
 	"snd_quaddamage"			"weapon_quaddamage_fire"
