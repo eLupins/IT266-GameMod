@@ -61,6 +61,7 @@ entityDef weapon_hyperblaster
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponHyperblaster"
 	"size"						"32 32 32"
+
 	/*
 	////////////////////THIS MAKES THE MODEL NOT VISiBLE IN GAME
   	"model_view"				"weapon_hyperblaster_view"
@@ -68,6 +69,7 @@ entityDef weapon_hyperblaster
   	"model_world"				"weapon_hyperblaster_world"
 	"model"						"models/weapons/hyperblaster/w_hb.lwo"
 	*/
+
 	"def_dropItem"				"weapon_hyperblaster"
 	"def_projectile"			"projectile_hyperblaster"
 
@@ -81,8 +83,8 @@ entityDef weapon_hyperblaster
 	"crosshairOffsetX"			"0"
 	"crosshairOffsetY"			"0"
 
-	"fireRate"					".08"
-	"spread"					"2"
+	"fireRate"					"1" //changed from .08
+	"spread"					"9"
 	"spread_mp"					"0"
 
 	"inv_weapon"				"weapon_hyperblaster"
@@ -90,13 +92,16 @@ entityDef weapon_hyperblaster
 	"inv_icon"					"gfx/guis/hud/icons/item_hyperblaster.tga"
 	"inv_name"					"#str_107404"	
 
+	//////inv_start_ammo, clipsize, and ammorequired made to 0 gives infinite ammo
+
+
 	"weaponname"				"HyperBlaster"
 	"ammoType"					"ammo_hyperblaster"
-	"inv_start_ammo_hyperblaster"		"60"
+	"inv_start_ammo_hyperblaster"		"0" //change from 60
 	"ammoRegenStep"				"5"
 	"ammoRegenTime"				"1100" //CHANGE FROM 1500
-	"clipSize"					"60"									// large for smooth regen
-	"ammoRequired"				"1"										// ammo is handled in the script file
+	"clipSize"					"0"									// large for smooth regen ;changed from 1
+	"ammoRequired"				"0"										// ammo is handled in the script file ; changed 
 	"gui"						"guis/weapons/hyperblaster_ammo.gui"
 	"mtr_icon"					"gfx/guis/hud/icons/gun_hyperblaster"
 	
@@ -109,7 +114,7 @@ entityDef weapon_hyperblaster
 	"recoilAngles"				"1 0 0"
 	
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"0.7 1 1" //CHANGE
+	"flashColor"				"0.7 1 0.2" //CHANGE
 	"flashRadius"				"400" //CHANGE
 	"flashPointLight"			"1"
 	"flashTime"					"1" //CHANGE
@@ -162,7 +167,7 @@ entityDef weapon_hyperblaster_mp
 	"muzzle_kick_maxtime"			"0"
 	"muzzle_kick_angles"			"0 0 0"
 	"muzzle_kick_offset"			"0 0 0"
-	"recoilTime"				"0"
+	"recoilTime"				"0.6" //changed frmo 0
 	"recoilAngles"				"0 0 0"
 	
 	"respawn_Team DM"			"30"
@@ -171,7 +176,7 @@ entityDef weapon_hyperblaster_mp
 	// played when you touch a weapon you can't acquire, i.e. weaponStay in MP
 	"snd_noAcquire"			"pickup_weaponstay"
 
-	"fireRate"					".07"
+	"fireRate"					1.5" //change from .07
 }
 
 entityDef moveable_item_hyperblaster
@@ -274,7 +279,7 @@ entityDef weaponmod_hyperblaster_bounce2
 entityDef damage_hyperblaster
 {
 	"inherit"					"damage_blaster"
-	"damage"					"0" //CHANGE
+	"damage"					"30" //CHANGE
 
 	"deathPush"					"100"
 	"deathPushMin"				"3000 350"
@@ -284,16 +289,18 @@ entityDef damage_hyperblaster
 entityDef damage_hyperblaster_mp
 {
 	"inherit"				"damage_hyperblaster"
-	"knockback"				"40" //CHANGE
+	"knockback"				"5000000" //CHANGE
 }
 
 entityDef damage_hyperblaster_splash
 {
-	"damage"					"0" //CHANGE
-	"radius"					"40" //CHANGE
-	"knockback"					"50" //CHANGE
-	"push"						"50" //CHANGE
+	"damage"					"40" //CHANGE
+	"radius"					"300" //CHANGE
+	"knockback"					"5000000" //CHANGE
+	"push"						"500000" //CHANGE
 	"gib"						"0"
+
+
 
 	"deathPush"					"100"
 	"deathPushMin"				"2000 350"
@@ -303,19 +310,19 @@ entityDef damage_hyperblaster_splash
 entityDef damage_hyperblaster_splash_mp //THERES STILL DAMAGE BEING DEALT; TRY TO FIND A WAY TO NULL IT AND MAKE IT A FORCE PUSH GUN
 { 
 	"inherit"				"damage_hyperblaster_splash"
-	"knockback" 				"40"
+	"knockback" 				"4000" //change
 }
 
 entityDef projectile_hyperblaster
 {
 	"inherit"					"projectile_blaster"
 
-	"size"						"3 3 3"
+	"size"						"7 7 7" //changed from 3 3 3 
 	"cone"						"2"
 	"clipmask_largeshot"		"0"
 	"def_damage"				"damage_hyperblaster"
 	
-	"speed"						"1800"
+	"speed"						"100" //changed 1800
 	"orient_towards_motion"		"1"
 
 	"fx_impact"			"effects/weapons/hyperblaster/impact_default.fx"
@@ -343,7 +350,7 @@ entityDef projectile_hyperblaster_mp
 {
 	"inherit"					"projectile_hyperblaster"
 	"def_splash_damage"			"damage_hyperblaster_splash"	
-	"speed"						"1950"
+	"speed"						"100" //changed from 1950
 	"no_impact_prediction"		"1"
 }
 

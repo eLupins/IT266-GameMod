@@ -82,8 +82,8 @@ entityDef weapon_blaster
 
 	// Firing properties
 	"chargeTime"				"2" //CHANGED FROM .8 ; IF THE DAMAGE AND RADIUS IS HIGH, MAKE A HIGHER CHARGE TIME
-	"chargeDelay"				".1"
-	"chargeGlow"				"1 .8" //CHANGED FROM .4
+	"chargeDelay"				".3" //CHANGE FROM .1
+	"chargeGlow"				"1.8" //CHANGED FROM .4
 	"fireRate"					".19" //CHANGED FROM .15
 	"spread"					"2" //CHANGE
 
@@ -109,7 +109,7 @@ entityDef weapon_blaster
 
 	// -------------------- Recoil and Muzzle Kick ---------------------------------------
 
-	"muzzle_kick_time"			"0.1"
+	"muzzle_kick_time"			"0.5" //CHANGE FROM 0.1
 	"muzzle_kick_maxtime"		"0.2"
 	"muzzle_kick_angles"		"-5 0 0"
 	"muzzle_kick_offset"		"2 0 0"

@@ -302,7 +302,7 @@ entityDef damage_grenadeDirect
 	"damage"					"20"
 	"gib"						"1"
 
-	"deathPush"					"200"
+	"deathPush"					"2000"
 	"deathPushMin"				"3000 2000"
 	"deathPushMax"				"5000 3000"
 
@@ -315,15 +315,15 @@ entityDef damage_grenadeDirect_mp
 {
 	"inherit"					"damage_grenadeDirect"
 	"damage"					"0" //CHANGE
-	"knockback"					"60000" //CHANGE
+	"knockback"					"65000" //CHANGE
 }
 
 entityDef damage_grenadeSplash 
 {
 	"damage"					"0" //CHANGE
 	"radius"					"550"
-	"knockback"					"80000"
-	"push"						"80000"
+	"knockback"					"85000"
+	"push"						"85000"
 	"gib"						"0"
 
 	"deathPush"					"50000"

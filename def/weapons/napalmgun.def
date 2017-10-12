@@ -47,7 +47,7 @@ entityDef viewStyle_q3_napalmgun {
 entityDef weapon_napalmgun
 {
 	"editor_menu"				"pickup"
-	"editor_color"				".3 .3 1"
+	"editor_color"				".9 .3 1" //CHANGE FROM .3 .3 1
 	"editor_mins"				"-16 -16 0"
 	"editor_maxs"				"16 16 32"
 
@@ -56,12 +56,14 @@ entityDef weapon_napalmgun
 	"spawnclass"				"idItem"
 	"weaponclass"				"WeaponNapalmGun"
 	"size"						"32 32 32"
+	/*
+	/////////////////////THIS SECTION MAKES THE MODEL VISIBLE IN GAME/////////////////////
   	"model_view"				"weapon_napalmgun_view"
   	"model_world"				"weapon_napalmgun_world"
 	"model"						"models/weapons/napalmgun/w_flamegun.ase"
 	"def_dropItem"				"weapon_napalmgun"
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_napalm"
-
+	*/
 	"joint_attach"				"RKT_ATTACHER"
 	"joint_view_flash"			"muzzle_flash"
 	"joint_view_barrel"			"muzzle_flash"
@@ -103,10 +105,10 @@ entityDef weapon_napalmgun
 	"recoilAngles"				"-.20 0 0"
 	
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"0.99 0.84 .31"
+	"flashColor"				"0.99 0.84 .61" //CHANGE FROM 0.99 0.84 .31
 	"flashRadius"				"200"
 	"flashPointLight"			"1"
-	"flashTime"					".1"
+	"flashTime"					".1" //CHANGE FROM .1
 	"flashViewOffset"			"15 -5 -5"
 
 	"mtr_guiLightShader"		"lights/viewWeaponGuiLight"
