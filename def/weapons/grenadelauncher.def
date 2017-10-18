@@ -314,13 +314,13 @@ entityDef damage_grenadeDirect
 entityDef damage_grenadeDirect_mp
 {
 	"inherit"					"damage_grenadeDirect"
-	"damage"					"0" //CHANGE
+	"damage"					"15" //CHANGE
 	"knockback"					"65000" //CHANGE
 }
 
 entityDef damage_grenadeSplash 
 {
-	"damage"					"0" //CHANGE
+	"damage"					"15" //CHANGE
 	"radius"					"550"
 	"knockback"					"85000"
 	"push"						"85000"
@@ -338,6 +338,6 @@ entityDef damage_grenadeSplash
 entityDef damage_grenadeSplash_mp
 {
 	"inherit"					"damage_grenadeSplash"
-	"damage"					"0" //CHANGE
+	"damage"					"15" //CHANGE
 	"radius"					"550" //CHANGED FROM 250
 }

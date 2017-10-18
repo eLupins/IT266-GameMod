@@ -56,10 +56,12 @@ entityDef weapon_lightninggun
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponLightningGun"
 	"size"						"32 32 32"
+	
 	"model_view" 				"weapon_lightninggun_view"
 	"model_view_strogg" 		"weapon_lightninggun_view_strogg"
   	"model_world"				"weapon_lightninggun_world"
 	"model"						"models/weapons/lightning_gun/w_lg.lwo"
+	
 	"def_dropItem"				"weapon_lightninggun"
 
 	"chainLightningRange"		"0 0"
@@ -76,16 +78,16 @@ entityDef weapon_lightninggun
 	"joint_hideGun_flash"		"waist"
 
 	"inv_weapon"						"weapon_lightninggun"
-	"inv_start_ammo_lightninggun"		"100"
+	"inv_start_ammo_lightninggun"		"0" //changed
 	"inv_item"							"1"
 	"inv_icon"							"gfx/guis/hud/icons/item_lightning.tga"
 	"inv_name"							"#str_107405"
 
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_lightninggun"
 	"ammoType"					"ammo_lightninggun"
-	"ammoRequired"				"1"
-	"clipSize"					"0"
-	"lowAmmo"					"10"
+	"ammoRequired"				"0"//changed
+	"clipSize"					"0"//changed
+	"lowAmmo"					"0"//changed/
 	"mtr_icon"					"gfx/guis/hud/icons/gun_lightninggun"
 
 	"muzzle_kick_time"			"0.1"
@@ -268,7 +270,7 @@ entityDef hitscan_lightninggun
 {
 	"range"						"10000"
 	"push"						"10000"
-	
+	//"ai_freeze""				"1"
 	"def_damage"				"damage_lightninggun"
 	
 //	"fx_impact"					"effects/weapons/lightninggun/impact.fx"
@@ -292,12 +294,12 @@ entityDef hitscan_lightninggun_mp
 
 entityDef damage_lightninggun
 {
-	"damage"					"11"
-//	"knockback"					"10"
+	"damage"					"0"
+//	"knockback"					"500"
 	"gib"						"1"
-
+	//"pain"						"concussive" //changed ; added to the script
 	"filter_electricity"		"1"						// can damage all entities with their damage_filter set to "electricity"
-	
+	//"ai_freeze""				"1"
 	"dv_time"					"100"
 	"dv_scale"					".05"
 
@@ -308,14 +310,14 @@ entityDef damage_lightninggun
 	"deathPushMax"				"4000 500"
 	
 	"bleed"						"1"
-	
+	//ai_disableAttacks;
 	"pain"						"stream"
 }
 
 entityDef damage_lightninggun_mp
 {
 	"inherit"					"damage_lightninggun"
-	"damage"					"7"
+	"damage"					"0"
 	"knockback"					"11"
 }
 

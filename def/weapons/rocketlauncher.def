@@ -57,10 +57,13 @@ entityDef weapon_rocketlauncher
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponRocketLauncher"
 	"size"						"32 32 32"
+	/*
   	"model_view"				"weapon_rocketlauncher_view"
   	"model_view_strogg"			"weapon_rocketlauncher_view_strogg"
   	"model_world"				"weapon_rocketlauncher_world"
 	"model"						"models/weapons/rocketlauncher/w_rl.lwo"
+	*/
+	
 	"def_dropItem"				"weapon_rocketlauncher"
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_rocketlauncher"
 
@@ -102,7 +105,7 @@ entityDef weapon_rocketlauncher
 	"flashColor"				"0.99 0.84 .31"
 	"flashRadius"				"200"
 	"flashPointLight"			"1"
-	"flashTime"					".1"
+	"flashTime"					".9" //change .1
 	"flashViewOffset"			"15 -5 -5"
 
 	"mtr_guiLightShader"		"lights/viewWeaponGuiLight"

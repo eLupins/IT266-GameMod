@@ -659,7 +659,7 @@ entityDef player_marine
 	"weapon4_best"						"0"
 	"weapon4_cycle"						"1"
 
-	"def_weapon5"						"weapon_nailgun"
+	"def_weapon5"						"weapon_lightninggun"
 	"weapon5_best"						"1"
 	"weapon5_cycle"						"1"
 
@@ -671,7 +671,7 @@ entityDef player_marine
 	"weapon7_best"						"0"
 	"weapon7_cycle"						"1"
 
-	"def_weapon8"						"weapon_lightninggun"
+	"def_weapon8"						"weapon_dmg"
 	"weapon8_best"						"1"
 	"weapon8_cycle"						"1"
 
@@ -692,7 +692,7 @@ entityDef player_marine
 	// default weapons
 	// seperate multiple weapons with commas (no spaces).
 	// NOTE: default ammo must be specified explicitly.
-	"weapon"						"weapon_blaster,weapon_gauntlet,weapon_grenadelauncher,weapon_hyperblaster,weapon_shotgun" //CHANGE
+	"weapon"						"weapon_blaster,weapon_gauntlet,weapon_lightninggun,weapon_hyperblaster,weapon_shotgun,weapon_grenadelauncher" //CHANGE
 	"current_weapon"					"0"
 
 	"pm_jumpheight"						"50" //CHANGE
