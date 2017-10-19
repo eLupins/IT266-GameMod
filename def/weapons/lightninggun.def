@@ -276,6 +276,7 @@ entityDef hitscan_lightninggun
 //	"fx_impact"					"effects/weapons/lightninggun/impact.fx"
 //	"fx_impact_water"			"effects/ambient/splash_med.fx"
 //	"fx_path"					"effects/weapons/lightninggun/trail.fx"
+	
 }
 
 entityDef hitscan_lightninggun_mp
@@ -285,6 +286,7 @@ entityDef hitscan_lightninggun_mp
 	"def_damage"				"damage_lightninggun_mp"
 	"inv_icon"					"gfx/guis/hud/icons/item_lightning_colored"
 	"mtr_simple_icon"				"simpleicons/item_lightning_colored"
+	
 }
 
 
@@ -294,12 +296,16 @@ entityDef hitscan_lightninggun_mp
 
 entityDef damage_lightninggun
 {
+	
+
+	"spawn"					"char_marine"
+
 	"damage"					"0"
 //	"knockback"					"500"
 	"gib"						"1"
 	//"pain"						"concussive" //changed ; added to the script
 	"filter_electricity"		"1"						// can damage all entities with their damage_filter set to "electricity"
-	//"ai_freeze""				"1"
+	
 	"dv_time"					"100"
 	"dv_scale"					".05"
 
@@ -310,8 +316,9 @@ entityDef damage_lightninggun
 	"deathPushMax"				"4000 500"
 	
 	"bleed"						"1"
-	//ai_disableAttacks;
+	
 	"pain"						"stream"
+	
 }
 
 entityDef damage_lightninggun_mp

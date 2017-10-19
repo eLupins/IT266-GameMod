@@ -14,7 +14,9 @@ Preparing the mod:
 WEAPONS INFO: 
 >Gauntlet is the only melee weapon available to the player
 
->Hyperblaster - light spell ; high damage, low regen time
+Spells
+>Hyperblaster - light spell ; high damage, very slow and slow fire rate
 >Blaster - explosion spell ; if the player charges for long enough, the charged blast is powerful. Quick blasts are weaker.
->Grenade launcher - quick explosion to make an enemy stumble for a moment
+>Grenade launcher - Spawns an explosive ally
 >Shotgun - Force push spell; forcefully pushes at an enemy and causes immediate death; very slow regen time
+>Lightning gun - 

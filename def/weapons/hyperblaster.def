@@ -278,12 +278,14 @@ entityDef weaponmod_hyperblaster_bounce2
 
 entityDef damage_hyperblaster
 {
+
 	"inherit"					"damage_blaster"
 	"damage"					"150" //CHANGE
 
 	"deathPush"					"100"
 	"deathPushMin"				"3000 350"
 	"deathPushMax"				"5000 500"
+	//"spawn"						"char_marinehead_gen_asian_2"
 }
  
 entityDef damage_hyperblaster_mp
@@ -349,9 +351,11 @@ entityDef projectile_hyperblaster
 entityDef projectile_hyperblaster_mp
 {
 	"inherit"					"projectile_hyperblaster"
+	//"inherit"					"powerup_haste"
 	"def_splash_damage"			"damage_hyperblaster_splash"	
 	"speed"						"100" //changed from 1950
 	"no_impact_prediction"		"1"
+	
 }
 
 entityDef projectile_hyperblaster_bounce1

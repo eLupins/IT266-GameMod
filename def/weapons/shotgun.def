@@ -151,7 +151,7 @@ entityDef weapon_shotgun
 	"mtr_guiLightShader"			"lights/viewWeaponGuiLight"
 	"glightRadius"				".9"
 	"glightOffset"				"0 1.5 -5.0"
-	"glightColor"				"1 0 1 1"//CHANGE FROM 1 0 0 1
+	"glightColor"				".8 0 1 1"//CHANGE FROM 1 0 0 1
 
 	"net_syncPhysics"			"1"
 }
@@ -177,7 +177,7 @@ entityDef weapon_shotgun_mp
 	"muzzle_kick_maxtime"			"0"
 	"muzzle_kick_angles"			"0 0 0"
 	"muzzle_kick_offset"			"0 0 0"
-	"recoilTime"				"1" //changed from 0
+	"recoilTime"				"3" //changed from 0
 	"recoilAngles"				"0 0 0"
 	"respawn_Team DM"			"30"
 	"respawn_Tourney"			"15"
@@ -332,6 +332,7 @@ entityDef hitscan_shotgun_pellet
 	"fx_impact_electronics_mp"		"effects/weapons/shotgun/impact_default_mp.fx"
 	"def_damage"				"damage_pellet"
 	"def_damage_flesh"			"damage_pellet"
+	
 	// for multiplayer clients. we only sync the hitscan def
 	// must be the same as weapon_shotgun_mp
 	"hitscans"				"3" //SCALED DOWN FROM 11

@@ -243,7 +243,7 @@ entityDef projectile_grenade
 	
 	"no_contents"				"0"
 								
-	"model"						"models/weapons/grenadelauncher/w_grenade.lwo"
+	"model"						"models\characters\bodies_parts\autopsy.lwo" // changed model
 	"def_damage"				"damage_grenadeDirect"
 	"def_splash_damage"			"damage_grenadeSplash"
 																											
@@ -331,7 +331,7 @@ entityDef damage_grenadeSplash
 	"deathPushMax"				"10000 12000"
 
 	"pain"						"concussive"
-
+	"spawn"						
 	"cower"						"1"
 }
 
