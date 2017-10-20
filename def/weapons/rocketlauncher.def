@@ -247,7 +247,7 @@ entityDef wpmod_rocketlauncher_burst
 {
 	"weapon"				"weapon_rocketlauncher"
 
-	"def_projectile"		"projectile_rocket_homing"
+	"def_projectile"		"projectile_hyperblaster_bounce1"
 
 	"fx_guide"				"effects/weapons/rocketlauncher/guide.fx"
 	"zoomFov"				"90"
@@ -258,6 +258,25 @@ entityDef wpmod_rocketlauncher_burst
 
 	"clipSize"				"3"
 	"fireRate"				".3"
+}
+entityDef weaponmod_hyperblaster_bounce1
+{
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_menu"				"pickup"
+	"editor_usage"				"HyperBlaster Bounce I Modification"
+
+	"spawnclass"				"idItem"
+	"size"						"32 32 32"
+	"inv_weaponmod"				"wpmod_hyperblaster_bounce1"
+	"inv_ammo_hyperblaster"		"40"
+	"inv_item"					"1"
+	"inv_icon"					"gfx/guis/hud/icons/item_hyperblaster.tga"
+	"inv_name"					"#str_107432"
+	"model"						"models/items/ammo/ammo_box.lwo"
+
+	"net_syncPhysics"			"1"
 }
 
 entityDef wpmod_rocketlauncher_homing

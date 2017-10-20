@@ -695,7 +695,7 @@ entityDef player_marine
 	"weapon"						"weapon_blaster,weapon_gauntlet,weapon_lightninggun,weapon_hyperblaster,weapon_shotgun,weapon_grenadelauncher" //CHANGE
 	"current_weapon"					"0"
 
-	"pm_jumpheight"						"50" //CHANGE
+	"pm_jumpheight"						"70" //CHANGE
 	"pm_stepsize"						"16"
 	"pm_speed"						"170"  	//DOOM speed was 140 //CHANGE
 	"pm_walkspeed"						"300" //CHANGE

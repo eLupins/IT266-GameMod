@@ -17,6 +17,6 @@ WEAPONS INFO:
 Spells
 >Hyperblaster - light spell ; high damage, very slow and slow fire rate
 >Blaster - explosion spell ; if the player charges for long enough, the charged blast is powerful. Quick blasts are weaker.
->Grenade launcher - Spawns an explosive ally
+>Grenade launcher - Necromancy spell ; summons an explosive ally
 >Shotgun - Force push spell; forcefully pushes at an enemy and causes immediate death; very slow regen time
->Lightning gun - 
+>Lightning gun - Forces flying enemies to move instead of staying stationary

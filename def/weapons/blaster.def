@@ -81,11 +81,11 @@ entityDef weapon_blaster
 	"joint_world_flash"			"muzzle_flash"
 
 	// Firing properties
-	"chargeTime"				"2" //CHANGED FROM .8 ; IF THE DAMAGE AND RADIUS IS HIGH, MAKE A HIGHER CHARGE TIME
-	"chargeDelay"				".3" //CHANGE FROM .1
+	"chargeTime"				"2.5" //CHANGED FROM .8 ; IF THE DAMAGE AND RADIUS IS HIGH, MAKE A HIGHER CHARGE TIME
+	"chargeDelay"				".5" //CHANGE FROM .1
 	"chargeGlow"				"1.8" //CHANGED FROM .4
-	"fireRate"					".19" //CHANGED FROM .15
-	"spread"					"2" //CHANGE
+	"fireRate"					"1" //CHANGED FROM .15
+	"spread"					"20" //CHANGE
 
 //	"def_projectile"			"projectile_blaster"
 	"def_hitscan"				"hitscan_blaster"
@@ -132,7 +132,7 @@ entityDef weapon_blaster
 	// ---------------------------- Muzzle Flash ---------------------------------------
 
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"1 0.8 1" //CHANGE
+	"flashColor"				"1 0.8 0.2" //CHANGE
 	"flashRadius"				"900" //CHANGE
 	"flashPointLight"			"1"
 	"flashTime"					".9" //CHANGE FROM .1 ; this is actually the trail that follows when you shoot normally
@@ -316,7 +316,7 @@ entityDef projectile_blaster_charged
 entityDef damage_blaster //BLASTER DAMAGE DEFINITIONS HERE
 {
 	"inherit"					"damage_bullet"
-	"damage"					"10" //CHANGE 
+	"damage"					"5" //CHANGE 
 
 	"fx_wound"					"effects/wounds/energy.fx"
 
@@ -328,14 +328,14 @@ entityDef damage_blaster //BLASTER DAMAGE DEFINITIONS HERE
 entityDef damage_blaster_charged
 {
 	"inherit"					"damage_blaster"
-	"damage"					"200" //CHANGE
+	"damage"					"55" //CHANGE
 }
 
 entityDef damage_blastersplash_charged
 {
 	"inherit"					"damage_blaster"
 	
-	"damage"					"400" //CHANGE
+	"damage"					"150" //CHANGE
 	"radius"					"200" //CHANGE
 	"knockback"					"60000"
 	"push"						"2500"

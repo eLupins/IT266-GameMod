@@ -97,11 +97,11 @@ entityDef weapon_hyperblaster
 
 	"weaponname"				"HyperBlaster"
 	"ammoType"					"ammo_hyperblaster"
-	"inv_start_ammo_hyperblaster"		"0" //change from 60
+	"inv_start_ammo_hyperblaster"		"20" //change from 60
 	"ammoRegenStep"				"5"
 	"ammoRegenTime"				"1100" //CHANGE FROM 1500
-	"clipSize"					"0"									// large for smooth regen ;changed from 1
-	"ammoRequired"				"0"										// ammo is handled in the script file ; changed 
+	"clipSize"					"1"									// large for smooth regen ;changed from 1
+	"ammoRequired"				"1"										// ammo is handled in the script file ; changed 
 	"gui"						"guis/weapons/hyperblaster_ammo.gui"
 	"mtr_icon"					"gfx/guis/hud/icons/gun_hyperblaster"
 	
@@ -266,7 +266,24 @@ entityDef weaponmod_hyperblaster_bounce1
 
 	"net_syncPhysics"			"1"
 }
+entityDef wpmod_rocketlauncher_homing
+{
+	"weapon"				"weapon_rocketlauncher"
 
+	"mod_showsurface"		"models/weapons/rocketlauncher/rl_seeker"
+
+	"def_projectile"		"projectile_rocket_homing"
+
+	"fx_guide"				"effects/weapons/rocketlauncher/guide.fx"
+	"zoomFov"				"90"
+	
+	"lockRange"				"10000"
+	"lockSlowdown"			".25"
+	"lockAccelTime"			".5"
+
+	"clipSize"				"3"
+	"fireRate"				".3"
+}
 entityDef weaponmod_hyperblaster_bounce2
 {
 	"inherit"					"weaponmod_hyperblaster_bounce1"
@@ -308,6 +325,17 @@ entityDef damage_hyperblaster_splash
 	"deathPushMin"				"2000 350"
 	"deathPushMax"				"4000 500"
 }
+entityDef projectile_rocket_homing
+{
+	"inherit"					"projectile_rocket"
+
+	"spawnclass"				"idGuidedProjectile"
+	"random"					"450 450 450"
+		
+	"turn_max"					"360"
+	"clamp_dist"				"10000"
+}
+
 
 entityDef damage_hyperblaster_splash_mp //THERES STILL DAMAGE BEING DEALT; TRY TO FIND A WAY TO NULL IT AND MAKE IT A FORCE PUSH GUN
 { 
